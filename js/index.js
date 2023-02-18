@@ -9,7 +9,63 @@
     alert("please, positive number type");
   }
 } */
+function random_bg_color() {
+  let x = Math.floor(Math.random() * 256);
+  let y = Math.floor(Math.random() * 256);
+  let z = Math.floor(Math.random() * 256);
+  let bgColor = "rgb(" + x + "," + y + "," + z + ")";
+  // card.style.background = bgColor;
+  const card1 = document.getElementById("first");
+  card1.style.background = bgColor;
+}
+function random_bg_color2() {
+  let x = Math.floor(Math.random() * 250);
+  let y = Math.floor(Math.random() * 250);
+  let z = Math.floor(Math.random() * 250);
+  let bgColor = "rgb(" + x + "," + y + "," + z + ")";
+  // card.style.background = bgColor;
+  const card2 = document.getElementById("second");
+  card2.style.background = bgColor;
+}
+function random_bg_color3() {
+  let x = Math.floor(Math.random() * 256);
+  let y = Math.floor(Math.random() * 256);
+  let z = Math.floor(Math.random() * 256);
+  let bgColor = "rgb(" + x + "," + y + "," + z + ")";
+  // card.style.background = bgColor;
+  const card2 = document.getElementById("third");
+  card2.style.background = bgColor;
+}
+function random_bg_color4() {
+  let x = Math.floor(Math.random() * 250);
+  let y = Math.floor(Math.random() * 250);
+  let z = Math.floor(Math.random() * 250);
+  let bgColor = "rgb(" + x + "," + y + "," + z + ")";
+  // card.style.background = bgColor;
+  const card2 = document.getElementById("four");
+  card2.style.background = bgColor;
+}
+function random_bg_color5() {
+  let x = Math.floor(Math.random() * 256);
+  let y = Math.floor(Math.random() * 256);
+  let z = Math.floor(Math.random() * 256);
+  let bgColor = "rgb(" + x + "," + y + "," + z + ")";
+  // card.style.background = bgColor;
+  const card2 = document.getElementById("fifth");
+  card2.style.background = bgColor;
+}
+function random_bg_color6() {
+  let x = Math.floor(Math.random() * 250);
+  let y = Math.floor(Math.random() * 250);
+  let z = Math.floor(Math.random() * 250);
+  let bgColor = "rgb(" + x + "," + y + "," + z + ")";
+  // card.style.background = bgColor;
+  const card2 = document.getElementById("sixth");
+  card2.style.background = bgColor;
+}
+// return bgColor;
 
+//------------------------------------------------------------------------------------------
 document.getElementById("triangle-btn").addEventListener("click", function () {
   const firstInput = document.getElementById("triangle-a").value;
   const secondInput = document.getElementById("triangle-b").value;
