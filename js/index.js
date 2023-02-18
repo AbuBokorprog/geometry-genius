@@ -28,7 +28,23 @@ document.getElementById("rhombus-btn").addEventListener("click", function () {
   const firstInput = document.getElementById("rhombus-d1").value;
   const secondInput = document.getElementById("rhombus-d2").value;
   const title = document.getElementById("rhombus-title").innerText;
-  const result = firstInput * secondInput;
+  const result = 0.5 * firstInput * secondInput;
+  console.log(title, result);
+  table(title, result.toFixed(2));
+});
+document.getElementById("pentagon-btn").addEventListener("click", function () {
+  const firstInput = document.getElementById("pentagon-p").value;
+  const secondInput = document.getElementById("pentagon-b").value;
+  const title = document.getElementById("pentagon-title").innerText;
+  const result = 0.5 * firstInput * secondInput;
+  console.log(title, result);
+  table(title, result.toFixed(2));
+});
+document.getElementById("ellipse-btn").addEventListener("click", function () {
+  const firstInput = document.getElementById("ellipse-a").value;
+  const secondInput = document.getElementById("ellipse-b").value;
+  const title = document.getElementById("ellipse-title").innerText;
+  const result = 3.1416 * firstInput * secondInput;
   console.log(title, result);
   table(title, result.toFixed(2));
 });
