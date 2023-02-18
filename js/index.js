@@ -9,12 +9,13 @@
     alert("please, positive number type");
   }
 } */
+
+// random color change
 function random_bg_color() {
   let x = Math.floor(Math.random() * 256);
   let y = Math.floor(Math.random() * 256);
   let z = Math.floor(Math.random() * 256);
   let bgColor = "rgb(" + x + "," + y + "," + z + ")";
-  // card.style.background = bgColor;
   const card1 = document.getElementById("first");
   card1.style.background = bgColor;
 }
@@ -23,48 +24,43 @@ function random_bg_color2() {
   let y = Math.floor(Math.random() * 250);
   let z = Math.floor(Math.random() * 250);
   let bgColor = "rgb(" + x + "," + y + "," + z + ")";
-  // card.style.background = bgColor;
   const card2 = document.getElementById("second");
   card2.style.background = bgColor;
 }
 function random_bg_color3() {
-  let x = Math.floor(Math.random() * 256);
-  let y = Math.floor(Math.random() * 256);
-  let z = Math.floor(Math.random() * 256);
+  let x = Math.floor(Math.random() * 226);
+  let y = Math.floor(Math.random() * 226);
+  let z = Math.floor(Math.random() * 226);
   let bgColor = "rgb(" + x + "," + y + "," + z + ")";
-  // card.style.background = bgColor;
   const card2 = document.getElementById("third");
   card2.style.background = bgColor;
 }
 function random_bg_color4() {
-  let x = Math.floor(Math.random() * 250);
-  let y = Math.floor(Math.random() * 250);
-  let z = Math.floor(Math.random() * 250);
+  let x = Math.floor(Math.random() * 230);
+  let y = Math.floor(Math.random() * 230);
+  let z = Math.floor(Math.random() * 230);
   let bgColor = "rgb(" + x + "," + y + "," + z + ")";
-  // card.style.background = bgColor;
   const card2 = document.getElementById("four");
   card2.style.background = bgColor;
 }
 function random_bg_color5() {
-  let x = Math.floor(Math.random() * 256);
-  let y = Math.floor(Math.random() * 256);
-  let z = Math.floor(Math.random() * 256);
+  let x = Math.floor(Math.random() * 236);
+  let y = Math.floor(Math.random() * 236);
+  let z = Math.floor(Math.random() * 236);
   let bgColor = "rgb(" + x + "," + y + "," + z + ")";
-  // card.style.background = bgColor;
   const card2 = document.getElementById("fifth");
   card2.style.background = bgColor;
 }
 function random_bg_color6() {
-  let x = Math.floor(Math.random() * 250);
-  let y = Math.floor(Math.random() * 250);
-  let z = Math.floor(Math.random() * 250);
+  let x = Math.floor(Math.random() * 240);
+  let y = Math.floor(Math.random() * 240);
+  let z = Math.floor(Math.random() * 240);
   let bgColor = "rgb(" + x + "," + y + "," + z + ")";
-  // card.style.background = bgColor;
   const card2 = document.getElementById("sixth");
   card2.style.background = bgColor;
 }
 // return bgColor;
-
+//calculate button
 //------------------------------------------------------------------------------------------
 document.getElementById("triangle-btn").addEventListener("click", function () {
   const firstInput = document.getElementById("triangle-a").value;
@@ -125,7 +121,7 @@ document.getElementById("ellipse-btn").addEventListener("click", function () {
   table(title, result.toFixed(2));
 });
 
-//table
+//table area calculation
 let number = 1;
 function table(triangleTitle, triangleResult) {
   const tableContainer = document.getElementById("tbody");
