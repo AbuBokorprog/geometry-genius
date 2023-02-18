@@ -51,13 +51,13 @@
     <main>
       <section class="lg:px-8">
         <div class="flex flex-col my-5 gap-12 md:flex-row lg:flex-row">
-          <div class="grid md:grid-cols-3 gap-5 justify-center">
+          <div class="grid md:grid-cols-3 gap-5 justify-center w-70">
             <div class="card bg-pink-400 shadow-xl w-80">
               <figure>
-                <img class="w-52 mt-5" src="/images/triangle.png" alt="Shoes" />
+                <img class="w-52 mt-5" src="/images/triangle.png" alt="" />
               </figure>
               <div class="card-body text-center">
-                <h2 class="text-center text-3xl font-medium">Triangle</h2>
+                <h2 class="text-center text-3xl font-medium" id="triangle-name">Triangle</h2>
                 <p>
                   Area (A) = 0.5
                   <span><i class="fa-solid fa-xmark"></i></span> b
@@ -86,11 +86,11 @@
                   </div>
                 </div>
                 <div class="card-actions justify-center">
-                  <button class="btn btn-primary px-20">Calculate</button>
+                  <button class="btn btn-primary px-20" id="triangle-btn">Calculate</button>
                 </div>
               </div>
             </div>
-            <div class="card shadow-xl w-80">
+            <div class="card shadow-xl bg-slate-100 w-80">
               <figure>
                 <img
                   class="w-52 mt-5"
@@ -99,7 +99,7 @@
                 />
               </figure>
               <div class="card-body text-center">
-                <h2 class="text-center text-3xl font-medium">Rectangle</h2>
+                <h2 class="text-center text-3xl font-medium" id="rectangle-title">Rectangle</h2>
                 <p>
                   Area (A) = L <span><i class="fa-solid fa-xmark"></i></span> W
                 </p>
@@ -125,11 +125,11 @@
                   </div>
                 </div>
                 <div class="card-actions justify-center">
-                  <button class="btn btn-primary px-20">Calculate</button>
+                  <button id="rectangle-btn"  class="btn btn-primary px-20">Calculate</button>
                 </div>
               </div>
             </div>
-            <div class="card shadow-xl w-80">
+            <div class="card shadow-xl bg-slate-100 w-80">
               <figure>
                 <img
                   class="w-52 mt-5"
@@ -193,7 +193,7 @@
                 </div>
               </div>
             </div>
-            <div class="card shadow-xl w-80">
+            <div class="card shadow-xl bg-slate-100 w-80">
               <figure>
                 <img class="w-52 mt-5" src="/images/pentagon.png" alt="" />
               </figure>
@@ -220,7 +220,7 @@
                 </div>
               </div>
             </div>
-            <div class="card shadow-xl w-80">
+            <div class="card shadow-xl bg-slate-100 w-80">
               <figure>
                 <img class="w-52 mt-5" src="/images/ellipse.png" alt="" />
               </figure>
@@ -241,7 +241,7 @@
                       name=""
                       id="ellipse-b"
                       placeholder="b"
-                    /><span>cm</span>
+                    /><span id="cm">cm</span>
                   </div>
                 </div>
                 <div class="card-actions justify-center">
@@ -250,12 +250,13 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="w-40">
             <table class="justify-center w-full">
               <h2 class="justify-center text-center font-medium">
                 Area Calculation
               </h2>
-              <tbody id="tbody"></tbody>
+              <tbody id="tbody">
+              </tbody>
             </table>
           </div>
         </div>
