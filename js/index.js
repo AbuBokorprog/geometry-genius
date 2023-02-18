@@ -1,15 +1,3 @@
-/* function getInputField(input1, input2, title) {
-  const inputField1 = document.getElementById(input1).value;
-  const inputField2 = document.getElementById(input2).value;
-  const name = document.getElementById(title).innerText;
-  if (inputField1 >= 0 && inputField2 > 0) {
-    const result = 0.5 * inputField1 * inputField2;
-    return name, result;
-  } else if (!isNaN == false && !isNaN == false) {
-    alert("please, positive number type");
-  }
-} */
-
 // random color change
 function random_bg_color() {
   let x = Math.floor(Math.random() * 256);
