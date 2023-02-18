@@ -70,7 +70,7 @@ document.getElementById("triangle-btn").addEventListener("click", function () {
   const firstInput = document.getElementById("triangle-a").value;
   const secondInput = document.getElementById("triangle-b").value;
   const title = document.getElementById("triangle-name").innerText;
-  if (firstInput >= 0 && secondInput > 0) {
+  if (firstInput > 0 && secondInput > 0) {
     const result = 0.5 * firstInput * secondInput;
     console.log(title, result);
     table(title, result.toFixed(2));
@@ -82,9 +82,13 @@ document.getElementById("rectangle-btn").addEventListener("click", function () {
   const firstInput = document.getElementById("rectangle-l").value;
   const secondInput = document.getElementById("rectangle-w").value;
   const title = document.getElementById("rectangle-title").innerText;
-  const result = firstInput * secondInput;
-  console.log(title, result);
-  table(title, result.toFixed(2));
+  if (firstInput > 0 && secondInput > 0) {
+    const result = firstInput * secondInput;
+    console.log(title, result);
+    table(title, result.toFixed(2));
+  } else if (!isNaN == false && !isNaN == false) {
+    alert("please, positive number type");
+  }
 });
 document
   .getElementById("parallelogram-btn")
