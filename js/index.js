@@ -59,7 +59,6 @@ function random_bg_color6() {
   const card2 = document.getElementById("sixth");
   card2.style.background = bgColor;
 }
-// return bgColor;
 //calculate button
 //------------------------------------------------------------------------------------------
 document.getElementById("triangle-btn").addEventListener("click", function () {
@@ -68,7 +67,6 @@ document.getElementById("triangle-btn").addEventListener("click", function () {
   const title = document.getElementById("triangle-name").innerText;
   if (firstInput > 0 && secondInput > 0) {
     const result = 0.5 * firstInput * secondInput;
-    console.log(title, result);
     table(title, result.toFixed(2));
   } else if (!isNaN == false && !isNaN == false) {
     alert("please, positive number type");
@@ -134,13 +132,15 @@ function table(triangleTitle, triangleResult) {
   const td = document.createElement("td");
   td.appendChild(button);
   tr.innerHTML = `
-  <td>${number++}</td>
-  <td>${triangleTitle}</td>
-  <td>${triangleResult}</td>
+  <td class="px-1 mb-2">${number++}</td>
+  <td class="px-2">${triangleTitle}</td>
+  <td class="pl-2">${triangleResult}</td>
   <td>${cm}</td>
   `;
   button.classList.add("btn");
   tableContainer.appendChild(tr);
+  tr.classList.add("my-10");
   td.classList.add("px-2");
+  td.classList.add("py-3");
   tr.appendChild(td);
 }
